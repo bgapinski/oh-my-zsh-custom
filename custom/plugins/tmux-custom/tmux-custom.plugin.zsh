@@ -51,10 +51,10 @@ if which tmux &> /dev/null
     if [[ "$ZSH_TMUX_ITERM2" == "false" ]] && [[ -f $HOME/.tmux.conf || -h $HOME/.tmux.conf ]]
 	then
 		#use this when they have a ~/.tmux.conf
-		export _ZSH_TMUX_FIXED_CONFIG="$zsh_tmux_plugin_path/tmux.extra.conf"
+		export _ZSH_TMUX_FIXED_CONFIG="$zsh_tmux_plugin_path/tmux-custom.extra.conf"
 	else
 		#use this when they don't have a ~/.tmux.conf
-		export _ZSH_TMUX_FIXED_CONFIG="$zsh_tmux_plugin_path/tmux.only.conf"
+		export _ZSH_TMUX_FIXED_CONFIG="$zsh_tmux_plugin_path/tmux-custom.only.conf"
 	fi
 
 	# Wrapper function for tmux.
